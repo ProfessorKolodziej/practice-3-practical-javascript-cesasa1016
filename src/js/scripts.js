@@ -5,3 +5,32 @@
 // - Do not use onclick - use addEventListener instead
 // - Run npm run test regularly to check autograding
 // - You'll need to link this file to your HTML :)
+
+console.log("Hello form Isa");
+
+const myName = "Isa";
+const myAge = 23;
+
+console.log(myAge);
+
+//practical JavaScript
+//show and hide an element on the page
+
+// find the element to hide
+const toggledParagraph = document.querySelector(".show");
+console.log(toggledParagraph);
+
+// write a function that toggles the show/hides classes
+function toggleparagraph() {
+  toggledParagraph.classList.toggle("show");
+  toggledParagraph.classList.toggle("hide");
+  console.log("my toggle function");
+  console.log(toggledParagraph);
+}
+
+//find the button and toggle the paragraph when we click it
+const toggleButton = document.querySelector("#toggle-control");
+
+toggleButton.addEventListener("click", toggleparagraph);
+
+
